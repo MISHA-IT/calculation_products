@@ -1,0 +1,111 @@
+body{
+  margin:0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+header{
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.media_navigation{
+    display: none;
+    background-color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}  
+.menu_button {
+    height: 35px;
+    width: 70px;
+    border: none;
+    color: #ff0000;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+}
+.admin{
+  background-color: rgb(255, 204, 203);
+  color: red;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.hamburger_menu {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 0px;
+    height: 100vh; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 55px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none; 
+    overflow-y: auto;
+    padding-bottom: 20px;
+    z-index: 10;
+    text-align: center;
+}
+.hamburger_menu a {
+    color: rgb(255, 0, 0);
+        background-color: #f4f4f4;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+    .hamburger_menu a:hover {
+        background-color: #ff0000;
+        color: #ffffff;
+    }
+main {
+  width: 100%;
+  display: inline-block;
+}
+.box_day {
+  width: min-content;
+  height: min-content;
+  text-align: center;
+  border: 1px solid red;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: red;
+}
+.box_day select{
+  width: 180px;
+  margin: 2px;
+  font-size: 17px;
+}
+.box_day h2{
+  color: white;
+}
+#calculation_products{
+  border-radius: 10px;
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  font-size: 15px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .media_navigation {
+    display: flex;
+  }
+  header {
+    padding-top: 55px;
+  }
+}
+.none {
+  display: block;
+}
